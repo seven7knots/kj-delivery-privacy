@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — KJ Delivery Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand: #E64A19;
+            --brand-dark: #BF360C;
+            --brand-light: #FF7043;
+            --ink: #1a1a1a;
+            --ink-secondary: #555;
+            --ink-muted: #888;
+            --surface: #FAFAF8;
+            --card: #FFFFFF;
+            --border: #E8E6E1;
+            --radius: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            background: var(--surface);
+            color: var(--ink);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 50%, var(--brand-light) 100%);
+            padding: 3rem 1.5rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.12) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 40%);
+        }
+        .header-content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+        .header h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: clamp(1.8rem, 5vw, 2.6rem);
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 100px;
+            padding: 0.35rem 1rem;
+            font-size: 0.8rem;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Main */
+        .main {
+            max-width: 720px;
+            margin: -2rem auto 4rem;
+            padding: 0 1.25rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Card */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem 1.75rem;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.03);
+        }
+
+        .card h2 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .card h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--brand);
+            color: #fff;
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        .card p, .card li {
+            color: var(--ink-secondary);
+            font-size: 0.92rem;
+            line-height: 1.75;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.75rem 0;
+        }
+        .card ul li {
+            padding: 0.3rem 0 0.3rem 1.5rem;
+            position: relative;
+        }
+        .card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--brand);
+            opacity: 0.6;
+        }
+
+        .card a {
+            color: var(--brand);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .card a:hover { border-bottom-color: var(--brand); }
+
+        /* Highlight box */
+        .highlight {
+            background: linear-gradient(135deg, rgba(230,74,25,0.06), rgba(230,74,25,0.02));
+            border-left: 3px solid var(--brand);
+            border-radius: 0 12px 12px 0;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+        }
+        .highlight p {
+            color: var(--ink);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 1.5rem 3rem;
+            border-top: 1px solid var(--border);
+        }
+        .footer p {
+            color: var(--ink-muted);
+            font-size: 0.82rem;
+            line-height: 1.8;
+        }
+        .footer a { color: var(--brand); text-decoration: none; font-weight: 500; }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card { padding: 1.5rem 1.25rem; }
+            .header { padding: 2.5rem 1.25rem 3.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <div class="badge">📋 Legal</div>
+        <h1>Privacy Policy</h1>
+        <p>KJ Delivery Services — How we handle your data</p>
+    </div>
+</div>
+
+<div class="main">
+
+    <div class="card">
+        <h2><span class="num">1</span> Introduction</h2>
+        <p>KJ Delivery Services ("we", "our", "us") operates the KJ Delivery mobile application. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application.</p>
+        <p>By using KJ Delivery, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use the application.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">2</span> Information We Collect</h2>
+
+        <h3>Account Information</h3>
+        <ul>
+            <li>Name, email address, and phone number when you create an account</li>
+            <li>Google account information if you sign in with Google</li>
+            <li>Profile information you choose to provide</li>
+        </ul>
+
+        <h3>Delivery Information</h3>
+        <ul>
+            <li>Delivery addresses you enter or save</li>
+            <li>Location data when you use the map picker to set a delivery point</li>
+            <li>Delivery instructions and preferences</li>
+        </ul>
+
+        <h3>Order Information</h3>
+        <ul>
+            <li>Products you browse, add to cart, and purchase</li>
+            <li>Order history, payment method selection, and transaction details</li>
+            <li>Communications with merchants or drivers related to orders</li>
+        </ul>
+
+        <h3>Device & Usage Information</h3>
+        <ul>
+            <li>Device type, operating system, and app version</li>
+            <li>Usage patterns and interaction data within the app</li>
+            <li>Crash logs and performance data to improve app stability</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">3</span> How We Use Your Information</h2>
+        <ul>
+            <li><strong>Provide services:</strong> Process orders, calculate delivery fees, facilitate payments, and enable communication between customers, merchants, and drivers</li>
+            <li><strong>Improve experience:</strong> Personalize recommendations, optimize delivery routes, and enhance app performance</li>
+            <li><strong>Communication:</strong> Send order updates, delivery notifications, and customer support responses</li>
+            <li><strong>Safety & security:</strong> Detect fraud, verify accounts, and protect all users of the platform</li>
+            <li><strong>Legal compliance:</strong> Fulfill legal obligations and enforce our terms of service</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">4</span> Location Data</h2>
+        <p>KJ Delivery uses location data to:</p>
+        <ul>
+            <li>Calculate accurate delivery fees based on distance</li>
+            <li>Allow you to set delivery addresses using the map picker</li>
+            <li>Enable drivers to navigate to delivery locations</li>
+            <li>Show nearby stores and services</li>
+        </ul>
+        <div class="highlight">
+            <p>Location data is only collected when you actively use location features (such as the map picker). We do not track your location in the background.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">5</span> Data Storage & Security</h2>
+        <p>Your data is stored securely using <strong>Supabase</strong>, a trusted cloud infrastructure provider with enterprise-grade security. We implement:</p>
+        <ul>
+            <li>Encrypted data transmission (HTTPS/TLS)</li>
+            <li>Row-level security policies on all database tables</li>
+            <li>Secure authentication with session management</li>
+            <li>Regular security reviews and updates</li>
+        </ul>
+        <p>While we strive to protect your information, no method of electronic storage is 100% secure. We cannot guarantee absolute security but take all reasonable measures to protect your data.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">6</span> Third-Party Services</h2>
+        <p>We use the following third-party services that may collect information:</p>
+        <ul>
+            <li><strong>Google Maps Platform:</strong> For map display, location picking, and distance calculation</li>
+            <li><strong>Google Sign-In:</strong> For optional social authentication</li>
+            <li><strong>Google Gemini AI:</strong> For the AI assistant feature (AI Mate)</li>
+            <li><strong>Supabase:</strong> For backend services, authentication, and data storage</li>
+        </ul>
+        <p>Each third-party service operates under its own privacy policy. We encourage you to review their policies.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">7</span> Data Sharing</h2>
+        <p>We do <strong>not sell</strong> your personal information. We may share data only in these circumstances:</p>
+        <ul>
+            <li><strong>With merchants:</strong> Order details necessary to fulfill your purchase</li>
+            <li><strong>With drivers:</strong> Delivery address and contact information for order delivery</li>
+            <li><strong>Legal requirements:</strong> When required by law or to protect rights and safety</li>
+            <li><strong>With your consent:</strong> Any other sharing only with your explicit permission</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">8</span> Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li><strong>Access</strong> the personal data we hold about you</li>
+            <li><strong>Correct</strong> inaccurate or incomplete information</li>
+            <li><strong>Delete</strong> your account and associated data</li>
+            <li><strong>Withdraw consent</strong> for optional data processing</li>
+            <li><strong>Export</strong> your data in a portable format</li>
+        </ul>
+        <p>To exercise any of these rights, contact us at the email address below.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">9</span> Children's Privacy</h2>
+        <p>KJ Delivery is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately and we will promptly delete it.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">10</span> Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="num">11</span> Contact Us</h2>
+        <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:seven7knots@gmail.com">seven7knots@gmail.com</a></li>
+            <li><strong>Website:</strong> <a href="https://sevenknots.co">sevenknots.co</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>
+        <strong>KJ Delivery Services</strong> — Operated by SevenKnots<br>
+        Effective Date: February 17, 2026<br>
+        Last Updated: February 17, 2026<br><br>
+        <a href="mailto:seven7knots@gmail.com">seven7knots@gmail.com</a> · <a href="https://sevenknots.co">sevenknots.co</a>
+    </p>
+</div>
+
+</body>
+</html>
